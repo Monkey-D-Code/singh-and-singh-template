@@ -1,0 +1,111 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    @media (max-width : 420px){
+        display: flex;
+        flex-flow: column;
+        .options{
+            margin-bottom : 0.8em;
+        }
+    }
+    @include fold_svg;
+    justify-content: space-between;
+    @include bar_shadow(darken($green,10%));
+    .brand{
+        padding : 0.5em 0.7em;
+        h1{
+            font-family: $nunito;
+            color: white;
+        }
+    }
+    .menu{
+        position: fixed;
+        right : -210px;
+        bottom : 0;
+        background-color: $black;
+        height: 100vh;
+        padding : 1em;
+        z-index : 10;
+        width : 200px;
+        transition: all 0.4s;
+        @include left_shadow($black);
+        
+        .hamburger{
+            position: absolute;
+            right : 230px;
+            bottom : 20px;
+            cursor: pointer;
+            transition: all 0.4s;
+            @include click_1;
+            span{
+                display: block;
+                height : 5px;
+                width : 30px;
+                margin : 5px 0;
+                background-color: darken($green,10%);
+            }
+           
+        }
+        ul{
+            font-family: $oswald;
+            display: flex;
+            flex-flow: column;
+            
+            justify-content: flex-end;
+            list-style-type: none;
+            height: 100%;
+            li{
+                margin : 0.5em;
+                transition: all 0.45s;
+                border-radius: 5px;
+                padding : 0.4em;
+                user-select: none;
+                a{
+                    text-decoration: none;
+                    color : white;
+                }
+                &:hover{
+                    background-color: white; 
+                    transform: translateY(-5px); 
+                    a{
+                        color: $green;
+                    }  
+                }
+                &:active{
+                    transform: translateY(5px);
+                }
+            }
+        }
+    }
+    .active{
+        right : 0;
+    }
+    .options{
+        padding : 0 0.7em;
+        width : 20em;
+        ul{
+            list-style-type: none;
+            font-family: $oswald;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                
+                a{
+                    transition: all 0.3s;
+                    font-size: 0.9em;
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        transform: translateY(-5px);
+                        color: lighten($green, 20%);
+                    }
+                    &:active{
+                        transform: translateY(10px);
+                        color: $yellow;
+                    }
+                }
+                
+            }
+        }
+    }
+}
