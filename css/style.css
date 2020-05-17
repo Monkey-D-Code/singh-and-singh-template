@@ -428,3 +428,79 @@ input {
           transition: all 0.5s; }
         .top-rated-products .product-list .single-product h4:hover a {
           color: #4d8b31; }
+
+.featured-brands {
+  margin: 4em 0; }
+  .featured-brands h1 {
+    font-family: "Nunito";
+    font-size: 2em;
+    background-image: linear-gradient(to right, #4d8b31, #ffc800);
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    margin: 1em auto; }
+    @media (max-width: 420px) {
+      .featured-brands h1 {
+        font-size: 1.5em;
+        font-weight: 500; } }
+  .featured-brands .brand-list {
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    @media (max-width: 768px) {
+      .featured-brands .brand-list {
+        width: 90%; } }
+    .featured-brands .brand-list .brand-card {
+      margin: 2em;
+      position: relative;
+      width: 400px;
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(77, 139, 49, 0.35);
+      -moz-box-shadow: 2px 3px 5px 0px rgba(77, 139, 49, 0.35);
+      box-shadow: 2px 3px 5px 0px rgba(77, 139, 49, 0.35); }
+      @media (max-width: 420px) {
+        .featured-brands .brand-list .brand-card {
+          margin: 1em; } }
+      @media (max-width: 1024px) {
+        .featured-brands .brand-list .brand-card {
+          width: 300px; } }
+      @media (max-width: 768px) {
+        .featured-brands .brand-list .brand-card {
+          width: 250px; } }
+      .featured-brands .brand-list .brand-card img {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 77% 100%, 63% 84%, 0 84%);
+        object-position: top; }
+        @media (max-width: 1024px) {
+          .featured-brands .brand-list .brand-card img {
+            width: 300px;
+            height: 150px; } }
+        @media (max-width: 768px) {
+          .featured-brands .brand-list .brand-card img {
+            width: 250px;
+            height: 100px;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 77% 100%, 63% 74%, 0 74%); } }
+      .featured-brands .brand-list .brand-card h4 {
+        font-family: "Oswald";
+        text-transform: uppercase;
+        position: absolute;
+        left: 10px;
+        bottom: 3px;
+        font-size: 1.3em; }
+        @media (max-width: 1024px) {
+          .featured-brands .brand-list .brand-card h4 {
+            font-size: 1em;
+            bottom: 2px; } }
+        .featured-brands .brand-list .brand-card h4 a {
+          text-decoration: none;
+          color: #4d8b31;
+          font-weight: 400;
+          transition: all 0.4s; }
+          .featured-brands .brand-list .brand-card h4 a:hover {
+            color: #ac3931; }

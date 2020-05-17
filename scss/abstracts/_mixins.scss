@@ -32,3 +32,16 @@
         transform: translateY(5px);
     }
 }
+
+@mixin gradient_text($color_1 , $color_2) {
+    background-image: linear-gradient(
+        to right,
+        $color_1,
+        $color_2,
+    );
+    width : fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+}
