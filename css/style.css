@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 @font-face {
   font-family: "Nunito";
   src: url("../../font/Nunito/Nunito-Regular.ttf") format("ttf");
@@ -313,3 +316,115 @@ input {
           @media (max-width: 420px) {
             .our-services .services .list .service h4 a {
               font-size: 1em; } }
+
+.top-rated-products {
+  min-height: 70vh;
+  width: 100%;
+  margin: 2em auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 1em; }
+  @media (max-width: 768px) {
+    .top-rated-products {
+      margin-top: 4.5em; } }
+  @media (max-width: 420px) {
+    .top-rated-products {
+      margin-top: 6em; } }
+  .top-rated-products svg {
+    margin-top: -2px; }
+  .top-rated-products .heading {
+    position: absolute;
+    top: 2em;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (max-width: 1280px) {
+      .top-rated-products .heading {
+        top: 1.5em; } }
+    @media (max-width: 1024px) {
+      .top-rated-products .heading {
+        top: -1em; } }
+    @media (max-width: 768px) {
+      .top-rated-products .heading {
+        top: -3em; } }
+    @media (max-width: 420px) {
+      .top-rated-products .heading {
+        top: -3.7em; } }
+    @media (max-width: 320px) {
+      .top-rated-products .heading {
+        top: -4em; } }
+    .top-rated-products .heading img {
+      width: 200px; }
+      @media (max-width: 420px) {
+        .top-rated-products .heading img {
+          width: 120px; } }
+      @media (max-width: 320px) {
+        .top-rated-products .heading img {
+          width: 110px; } }
+    .top-rated-products .heading h1 {
+      font-family: "Nunito";
+      text-transform: uppercase;
+      color: transparent;
+      letter-spacing: -1px;
+      background-image: linear-gradient(to right, #43782a, #b38c00);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      font-size: 2.2em; }
+      @media (max-width: 1280px) {
+        .top-rated-products .heading h1 {
+          font-size: 2em; } }
+      @media (max-width: 768px) {
+        .top-rated-products .heading h1 {
+          font-size: 1.5em; } }
+      @media (max-width: 420px) {
+        .top-rated-products .heading h1 {
+          font-size: 1em; } }
+  .top-rated-products .product-list {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start; }
+    @media (max-width: 1280px) {
+      .top-rated-products .product-list {
+        width: 90%; } }
+    @media (max-width: 420px) {
+      .top-rated-products .product-list {
+        width: 95%;
+        justify-content: center; } }
+    .top-rated-products .product-list .single-product {
+      width: 200px;
+      margin: 0.8em;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
+      -moz-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
+      box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35); }
+      @media (max-width: 420px) {
+        .top-rated-products .product-list .single-product {
+          width: 140px; } }
+      .top-rated-products .product-list .single-product img {
+        width: 200px;
+        height: 230px;
+        object-fit: contain; }
+        @media (max-width: 420px) {
+          .top-rated-products .product-list .single-product img {
+            width: 140px;
+            height: 200px; } }
+      .top-rated-products .product-list .single-product h4 {
+        padding: 0.5em;
+        transition: all 0.4s; }
+        .top-rated-products .product-list .single-product h4 a {
+          text-decoration: none;
+          font-family: "Oswald";
+          font-size: 0.8em;
+          color: #b83d34;
+          font-weight: 400;
+          transition: all 0.5s; }
+        .top-rated-products .product-list .single-product h4:hover a {
+          color: #4d8b31; }
