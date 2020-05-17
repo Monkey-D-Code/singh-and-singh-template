@@ -4,4 +4,7 @@ function toggleMenu(){
 
 // video contorls
 document.querySelector(".hero-area video").playbackRate = 0.6;
+
+
+
     

@@ -9,7 +9,11 @@
     -moz-box-shadow: -4px 2px 11px 1px rgba($color,0.51);
     box-shadow: -4px 2px 11px 1px rgba($color,0.51);
 }
-
+@mixin card_shadow($color){
+    -webkit-box-shadow: 2px 3px 5px 0px rgba($color,0.35);
+    -moz-box-shadow: 2px 3px 5px 0px rgba($color,0.35);
+    box-shadow: 2px 3px 5px 0px rgba($color,0.35);
+}
 
 // svg
 @mixin fold_svg{

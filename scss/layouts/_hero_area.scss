@@ -43,7 +43,7 @@
             width : 60%;
         }
         @media (max-width : 420px){
-            width : 90%;
+            width : 95%;
         }
         @media (max-width : 320px){
             width : 95%;
@@ -60,6 +60,9 @@
             text-transform: uppercase;
             color: white;
             font-weight: 300;
+            @media (max-width : 400px){
+                font-size: 1.7em;
+            }
         }
         .contact-info{
             font-family: $nunito;
