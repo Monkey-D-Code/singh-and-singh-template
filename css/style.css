@@ -56,6 +56,76 @@ input {
   .btn-search:active {
     transform: translateY(5px); }
 
+.navigation .options .cart-btn span {
+  color: white;
+  cursor: pointer;
+  user-select: none; }
+  .navigation .options .cart-btn span:hover {
+    transform: translateY(-5px); }
+  .navigation .options .cart-btn span:active {
+    transform: translateY(5px); }
+
+.navigation .options .cart-btn .cart-popup {
+  height: 0px;
+  width: 0px;
+  background-color: #4d8b31;
+  position: absolute;
+  right: 3px;
+  top: 49px;
+  z-index: 4;
+  border-radius: 5px;
+  transition: all 0.4s;
+  overflow: auto; }
+  .navigation .options .cart-btn .cart-popup::-webkit-scrollbar {
+    display: none; }
+  .navigation .options .cart-btn .cart-popup .cart-content {
+    position: relative;
+    padding-bottom: 1em;
+    display: none;
+    padding: 1em;
+    width: 100%; }
+    .navigation .options .cart-btn .cart-popup .cart-content h4 {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 400;
+      border-bottom: 1px solid white;
+      padding-bottom: 0.5em; }
+    .navigation .options .cart-btn .cart-popup .cart-content .items {
+      margin: 0.5em 0; }
+      .navigation .options .cart-btn .cart-popup .cart-content .items .single-item {
+        display: flex;
+        margin: 0.4em 0;
+        justify-content: space-between;
+        align-items: center; }
+        .navigation .options .cart-btn .cart-popup .cart-content .items .single-item img {
+          width: 80px; }
+        .navigation .options .cart-btn .cart-popup .cart-content .items .single-item .info {
+          width: 180px; }
+          .navigation .options .cart-btn .cart-popup .cart-content .items .single-item .info h5 {
+            font-weight: 400; }
+          .navigation .options .cart-btn .cart-popup .cart-content .items .single-item .info .price {
+            font-size: 0.9em;
+            background-color: white;
+            color: #4d8b31;
+            width: fit-content;
+            margin: 0.4em 0;
+            padding: 0.3em 0.6em;
+            border-radius: 4px; }
+          .navigation .options .cart-btn .cart-popup .cart-content .items .single-item .info .quantity {
+            font-size: 0.7em;
+            color: white; }
+    .navigation .options .cart-btn .cart-popup .cart-content .go-to-cart {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0.8em; }
+
+.navigation .options .cart-btn .active {
+  height: 400px;
+  width: 300px; }
+  .navigation .options .cart-btn .active .cart-content {
+    display: block; }
+
 .navigation {
   display: flex;
   align-items: center;
