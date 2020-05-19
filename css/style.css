@@ -72,10 +72,14 @@ input {
   position: absolute;
   right: 3px;
   top: 49px;
-  z-index: 4;
+  z-index: 6;
   border-radius: 5px;
   transition: all 0.4s;
   overflow: auto; }
+  @media (max-width: 420px) {
+    .navigation .options .cart-btn .cart-popup {
+      top: 90px;
+      right: 5px; } }
   .navigation .options .cart-btn .cart-popup::-webkit-scrollbar {
     display: none; }
   .navigation .options .cart-btn .cart-popup .cart-content {
