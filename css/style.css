@@ -792,6 +792,31 @@ footer {
       .medicine-details .product-information .price .market-price {
         font-family: "Nunito";
         color: #43782a; }
+    .medicine-details .product-information .quantity {
+      margin: 0.5em 0;
+      display: flex;
+      align-items: center; }
+      .medicine-details .product-information .quantity input {
+        width: 120px;
+        height: 50px;
+        outline: none;
+        text-align: center; }
+      .medicine-details .product-information .quantity span {
+        font-size: 1.4em;
+        cursor: pointer;
+        padding: 0.4em;
+        color: white;
+        transition: all 0.4s; }
+        .medicine-details .product-information .quantity span:hover {
+          transform: translateY(-5px); }
+        .medicine-details .product-information .quantity span:active {
+          transform: translateY(5px); }
+        .medicine-details .product-information .quantity span:first-child {
+          background-color: #4d8b31;
+          border-radius: 5px 0px 0px 5px; }
+        .medicine-details .product-information .quantity span:last-child {
+          background-color: #ac3931;
+          border-radius: 0px 5px 5px 0px; }
     .medicine-details .product-information .options {
       width: 80%;
       margin: 0.8em 0;
