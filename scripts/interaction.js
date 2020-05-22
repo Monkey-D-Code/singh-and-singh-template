@@ -26,12 +26,3 @@ if(quantity && plus && minus){
         if(parseInt(quantity.value) > 1) quantity.value = parseInt(quantity.value) - 1
     }
 } 
-
-
-// cart popup open/close
-var cart_button = document.querySelector(".navigation .options .cart-btn span");
-var cart_popup = document.querySelector(".navigation .options .cart-btn .cart-popup");
-
-cart_button.addEventListener('click',function(){
-    cart_popup.classList.toggle("active");
-})
