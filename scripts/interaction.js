@@ -1,5 +1,5 @@
 function toggleMenu(){
-    var menu = document.querySelector(".navigation .menu").classList.toggle("active");
+    var menu = document.querySelector(".navigation-2 .side-menu").classList.toggle("active");
 }
 
 // video contorls

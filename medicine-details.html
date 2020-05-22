@@ -9,65 +9,34 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav class="navigation">
-            <div class="brand">
-                <h1>Singh & Singh</h1>
+        <nav class="navigation-2">
+            <div class="search-bar">
+                <div class="brand">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search for a product or brand">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Others</li>
+                        <li><i class="fa fa-phone-square" aria-hidden="true"></i> 1122334455</li>
+                        <li><i class="fa fa-tags" aria-hidden="true"></i> Offers</li>
+                        <li><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</li>
+                        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</li>
+                    </ul>
+                </div>
             </div>
-            <div class="options">
+            <div class="main-menu">
                 <ul>
-                    <li><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> Offers</a></li>
-                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Login/SignUp</a></li>
-                    <li class="cart-btn">
-                        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span>
-                        <div class="cart-popup">
-                            <div class="cart-content">
-                                <h4>Recently Added Items</h4>
-                                <div class="items">
-                                    <div class="single-item">
-                                        <img src="https://res.sastasundar.com/incom/images/product/OXY-Icy-Charcoal-Deep-Face-Wash-1566452501-10032218-1.jpg" alt="">
-                                        <div class="info">
-                                            <h5><a href="./medicine-details.html">OXY Icy Charcoal Deep Face Wash 50 g</a></h5>
-                                            
-                                            <p class="price"><i class="fa fa-inr" aria-hidden="true"></i> 77.5</p>
-                                            <p class="quantity">&times; 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-item">
-                                        <img src="https://res.sastasundar.com/incom/images/product/Lakme-Enrich-Satin-Lipstick-43-gm-1568099383-10030958-1.jpg" alt="">
-                                        <div class="info">
-                                            <h5><a href="./medicine-details.html">Lakme Enrich Satin Lipstick 4.3 gm Shade (R356)</a></h5>
-                                            
-                                            <p class="price"><i class="fa fa-inr" aria-hidden="true"></i> 77.5</p>
-                                            <p class="quantity">&times; 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-item">
-                                        <img src="https://res.sastasundar.com/incom/images/product/Nicotex-Cinnamon--Flavour-Sugar-Free-Gum-1470832825-10026653.jpg" alt="">
-                                        <div class="info">
-                                            <h5><a href="./medicine-details.html">Nicotex Cinnamon Flavour Sugar Free Chewing Gum 4 mg (9 Gums)</a></h5>
-                                            
-                                            <p class="price"><i class="fa fa-inr" aria-hidden="true"></i> 77.5</p>
-                                            <p class="quantity">&times; 4</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-item">
-                                        <img src="https://res.sastasundar.com/incom/images/product/OXY-Icy-Charcoal-Deep-Face-Wash-1566452501-10032218-1.jpg" alt="">
-                                        <div class="info">
-                                            <h5><a href="./medicine-details.html">OXY Icy Charcoal Deep Face Wash 50 g</a></h5>
-                                            
-                                            <p class="price"><i class="fa fa-inr" aria-hidden="true"></i> 77.5</p>
-                                            <p class="quantity">&times; 4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="./cart.html" class="go-to-cart">View Cart &rarr;</a>
-                            </div>
-                        </div>
-                    </li>
-                    
+                    <li><a href="#">Order Medicine</a></li>
+                    <li><a href="#">Order By Prescription</a></li>
+                    <li><a href="#">Shop by Category</a></li>
+
                 </ul>
             </div>
-            <div class="menu">
+            <div class="side-menu">
                 <div class="hamburger" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
@@ -81,12 +50,15 @@
                     <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> Privacy Policy</a></li>
                     <li><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> Terms & Conditions</a></li>
 
+                    <li class='small-screen'><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Others</a></li>
+                    <li class='small-screen'><a href="#"><i class="fa fa-tags" aria-hidden="true"></i> Offers</a></li>
+                    <li class='small-screen'><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
+                    <li class='small-screen'><a href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+
                 </ul>
             </div>
-            
-            
         </nav>
-        <!-- *********************************************************** -->
+    <!-- *********************************************************** -->
 
         <!-- ************************ MEDICINE DETAILS ***************************** -->
         <div class="medicine-details">
