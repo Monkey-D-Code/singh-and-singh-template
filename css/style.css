@@ -230,6 +230,7 @@ input {
   -moz-box-shadow: 3px 4px 5px 0px rgba(9, 63, 116, 0.42);
   box-shadow: 3px 4px 5px 0px rgba(9, 63, 116, 0.42); }
   .navigation-2 .search-bar {
+    padding-top: 10px;
     display: flex;
     align-items: center; }
     @media (max-width: 420px) {
@@ -312,6 +313,7 @@ input {
       .navigation-2 .main-menu ul li {
         font-family: "Nunito";
         text-transform: uppercase;
+        font-size: 0.9em;
         transition: all 0.5s; }
         @media (max-width: 420px) {
           .navigation-2 .main-menu ul li {
@@ -333,20 +335,20 @@ input {
           color: #62b13e; }
   .navigation-2 .side-menu {
     position: fixed;
-    right: -210px;
+    right: -230px;
     bottom: 0;
     background-color: #1e212b;
     height: 100vh;
     padding: 1em;
-    z-index: 10;
-    width: 200px;
+    z-index: 99;
+    width: 220px;
     transition: all 0.4s;
     -webkit-box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
     -moz-box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
     box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51); }
     .navigation-2 .side-menu .hamburger {
       position: absolute;
-      right: 230px;
+      right: 250px;
       bottom: 20px;
       cursor: pointer;
       transition: all 0.4s; }
@@ -391,7 +393,7 @@ input {
           .navigation-2 .side-menu ul .small-screen {
             display: block; } }
   .navigation-2 .active {
-    right: 0; }
+    right: -1px; }
 
 .hero-area {
   width: 100%;

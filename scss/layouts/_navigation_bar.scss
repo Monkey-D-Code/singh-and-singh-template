@@ -115,6 +115,7 @@
     background-color: $blue;
     @include bar_shadow(darken($blue,10%));
     .search-bar{
+        padding-top: 10px;
         display: flex;
         align-items: center;
         @media (max-width : 420px){
@@ -208,6 +209,7 @@
             li{
                 font-family: $nunito;
                 text-transform: uppercase;
+                font-size: 0.9em;
                 @media (max-width : 420px){
                     font-size: 0.7em;
                 }
@@ -237,19 +239,19 @@
     }
     .side-menu{
         position: fixed;
-        right : -210px;
+        right : -230px;
         bottom : 0;
         background-color: $black;
         height: 100vh;
         padding : 1em;
-        z-index : 10;
-        width : 200px;
+        z-index : 99;
+        width : 220px;
         transition: all 0.4s;
         @include left_shadow($black);
         
         .hamburger{
             position: absolute;
-            right : 230px;
+            right : 250px;
             bottom : 20px;
             cursor: pointer;
             transition: all 0.4s;
@@ -304,6 +306,6 @@
         }
     }
     .active{
-        right : 0;
+        right : -1px;
     }
 }
