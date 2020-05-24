@@ -33,7 +33,7 @@ gsap.from(".navigation-2 .search-bar .search" , {
 // SLIDER
 var no_of_slides = document.querySelectorAll(".hero-slider .slide-container .slide").length;
 var slideTimeline = gsap.timeline({delay  :1 ,repeat : -1 , yoyo : true});
-var slide_width = document.querySelector(".hero-slider").clientWidth;
+var slide_width = document.querySelector(".hero-slider").clientWidth || 0;
 
 if(no_of_slides){
     slideTimeline.to(".hero-slider .slide-container" , {
@@ -80,5 +80,21 @@ if(topRatedProducts){
     },"-=0.1")
 }
 
+// FEATURED BRANDS
+const featuredBrands = document.querySelector(".featured-brands");
+const featuredBrandsTimeline = gsap.timeline({paused : false});
+if(featuredBrands){
+    featuredBrandsTimeline.from(".featured-brands h1",{
+        scale : 0,
+        duration : 2,
+        ease : "elastic"
+    }).from(".featured-brands .brand-list .brand-card",{
+        opacity : 0,
+        scaleX : 0,
+        transformOrigin : "top left",
+        duration : 0.5,
+        stagger : 0.2,
+    },"-=1.5")
+}
 
 // **********************************************************************

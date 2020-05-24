@@ -45,6 +45,21 @@ if(topRatedProducts){
 }
 
 
+// FEATURED BRANDS
+if(featuredBrands){
+    const options = {
+        rootMargin : screen.width > 768 ? "-250px" : "-100px",
+    };
+    const featuredBrandsObserver = new IntersectionObserver((entries)=>{
+        if(entries[0].isIntersecting){
+            featuredBrandsTimeline.play();
+        } else{
+            featuredBrandsTimeline.reverse();
+        }
+    } , options);   
+    featuredBrandsObserver.observe(featuredBrands);
+}
+
 
 // *******************************************************************************
 

@@ -130,6 +130,26 @@ input {
   .navigation .options .cart-btn .active .cart-content {
     display: block; }
 
+.pre-loader {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 199;
+  background-color: white; }
+  .pre-loader img {
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%); }
+    @media (max-width: 1024px) {
+      .pre-loader img {
+        width: 100%;
+        margin-left: 0;
+        transform: translateX(0%);
+        margin-top: 25%; } }
+
 .navigation {
   display: flex;
   align-items: center;
