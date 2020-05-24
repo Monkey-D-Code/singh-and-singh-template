@@ -13,18 +13,37 @@ sideMenuTimeline.to(".navigation-2 .side-menu",{
 // *********************************************************************
 
 // ****************** NAVIGATION MENU **********************************
-gsap.from(".navigation-2 .search-bar .brand img" , {
-    duration : 2,
+const navAminationTimeline = gsap.timeline({paused : true})
+navAminationTimeline.from(".navigation-2 .search-bar .brand img" , {
+    duration : 1,
     width : "50px",
     ease : "elastic"
-});
-gsap.from(".navigation-2 .search-bar .search" , {
-    duration : 1,
+}).from(".navigation-2 .search-bar .search" , {
+    duration : 0.4,
     y : "-100px",
     opacity : 0,
     ease : "ease",
-    delay : 1,
 });
+
+const cartPopupTimeLine = gsap.timeline({paused : true});
+cartPopupTimeLine.from(".navigation-2 .search-bar .options .cart-popup" ,{
+    scale : 0,
+    duration : 0.3,
+    transformOrigin : "top right",
+    ease : Power4.ease,
+}).from(".navigation-2 .search-bar .options .cart-popup .item-list .single-item",{
+    opacity : 0,
+    duration : 0.5,
+    stagger : 0.1,
+},"-=0.2")
+
+const pincodePopupTimeline = gsap.timeline({paused : true});
+pincodePopupTimeline.from(".navigation-2 .search-bar .options .enter-pincode",{
+    scale : 0,
+    duration : 0.3,
+    transformOrigin : "top right",
+    ease : Power4.ease,
+})
 
 // ***********************************************************************
 

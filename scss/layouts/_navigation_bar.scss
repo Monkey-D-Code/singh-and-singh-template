@@ -192,6 +192,7 @@
                 list-style-type: none;
                 justify-content: space-around;
                 align-items: center;
+                user-select: none;
                 li{
                     font-family: $oswald;
                     font-size: 0.9em;
@@ -200,6 +201,15 @@
                     }
                     color: white;
                     cursor: pointer;
+                }
+                .cart-toggle , .pincode-toggle{
+                    padding : 0.2em;
+                    border-radius: 3px;
+                    transition: all 0.2s;
+                    &:active{
+                        background-color: white;
+                        color: $green;
+                    }
                 }
             }
         }

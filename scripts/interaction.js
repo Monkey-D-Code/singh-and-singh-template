@@ -1,3 +1,35 @@
+// **************** NAVIGATION BAR INTERACTION ***************************
+const navObserver = new IntersectionObserver((entries)=>{
+    if(entries[0].isIntersecting){
+        navAminationTimeline.play();
+    }else{
+        navAminationTimeline.reverse();
+    }
+});
+navObserver.observe(document.querySelector(".navigation-2"))
+
+// cart popup toggle
+const cartToggleButton = document.querySelector(".navigation-2 .search-bar .options .cart-toggle");
+cartToggleButton.addEventListener("click",()=>{
+    if(cartPopupTimeLine.progress() === 0){
+        cartPopupTimeLine.play();
+    }else if(cartPopupTimeLine.progress() === 1){
+        cartPopupTimeLine.reverse();
+    }
+})
+
+// pincode popup toggle
+const pincodeToggleButton = document.querySelector(".navigation-2 .search-bar .options .pincode-toggle");
+pincodeToggleButton.addEventListener("click",()=>{
+    if(pincodePopupTimeline.progress() === 0){
+        pincodePopupTimeline.play();
+    }else if(pincodePopupTimeline.progress() === 1){
+        pincodePopupTimeline.reverse();
+    }
+})
+
+// ************************************************************************
+
 // *********************** SIDE MENU INTERACTION **************************
 var hamburger = document.querySelector(".navigation-2 .side-menu .hamburger");
 if(hamburger){
@@ -15,7 +47,7 @@ if(hamburger){
 
 // ******************************* HOME PAGE ***********************************
 // WHAT WE DO
-if(whatWeDo){
+if(typeof(whatWeDo) === 'object'){
     const options = {
         rootMargin : screen.width > 768 ? "-250px" : "-120px",
     };

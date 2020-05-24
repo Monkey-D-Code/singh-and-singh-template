@@ -1,11 +1,11 @@
 // DISPLAYING PRELOADER WHILE LOADING
 const preloader = document.querySelector(".pre-loader");
 document.onreadystatechange = () => {
-    if (document.readyState === 'complete') {
+    if (document.readyState === 'interactive') {
         setInterval(()=>{
             document.body.style.overflow = "auto";
             preloader.style.display = "none";
-        }, 2000)
+        }, 500)
         
     }else{
         document.body.style.overflow = "hidden";

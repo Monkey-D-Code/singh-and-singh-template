@@ -318,7 +318,8 @@ input {
         display: flex;
         list-style-type: none;
         justify-content: space-around;
-        align-items: center; }
+        align-items: center;
+        user-select: none; }
         .navigation-2 .search-bar .options ul li {
           font-family: "Oswald";
           font-size: 0.9em;
@@ -327,6 +328,13 @@ input {
           @media (max-width: 1024px) {
             .navigation-2 .search-bar .options ul li {
               font-size: 0.8em; } }
+        .navigation-2 .search-bar .options ul .cart-toggle, .navigation-2 .search-bar .options ul .pincode-toggle {
+          padding: 0.2em;
+          border-radius: 3px;
+          transition: all 0.2s; }
+          .navigation-2 .search-bar .options ul .cart-toggle:active, .navigation-2 .search-bar .options ul .pincode-toggle:active {
+            background-color: white;
+            color: #4d8b31; }
   .navigation-2 .main-menu {
     padding-bottom: 5px; }
     .navigation-2 .main-menu ul {
@@ -1040,6 +1048,151 @@ footer {
             transform: translateY(-5px); }
           .hero-slider .slide-container .slide .content a:active {
             transform: translateY(5px); }
+
+.navigation-2 .options .cart-popup {
+  position: absolute;
+  z-index: 9;
+  top: 5.8em;
+  right: 5px;
+  width: 300px;
+  height: 400px;
+  background-color: #0D59A3;
+  -webkit-box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
+  -moz-box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
+  box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
+  border-radius: 5px;
+  padding: 10px; }
+  .navigation-2 .options .cart-popup .cart-content h3 {
+    font-family: "Oswald";
+    color: white;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navigation-2 .options .cart-popup .cart-content h3 button {
+      border: none;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: #ca4e46;
+      color: white;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.4s; }
+      .navigation-2 .options .cart-popup .cart-content h3 button:hover {
+        transform: translateY(-5px); }
+      .navigation-2 .options .cart-popup .cart-content h3 button:active {
+        transform: translateY(5px); }
+  .navigation-2 .options .cart-popup .cart-content .item-list {
+    height: 310px;
+    overflow: auto; }
+    .navigation-2 .options .cart-popup .cart-content .item-list::-webkit-scrollbar {
+      display: none; }
+    .navigation-2 .options .cart-popup .cart-content .item-list .single-item {
+      display: flex;
+      align-items: stretch;
+      margin: 0.5em 0; }
+      .navigation-2 .options .cart-popup .cart-content .item-list .single-item img {
+        width: 60px;
+        object-fit: cover;
+        margin-right: 10px; }
+      .navigation-2 .options .cart-popup .cart-content .item-list .single-item .info h4 {
+        font-family: "Oswald";
+        width: 210px;
+        font-size: 0.9em;
+        color: white;
+        font-weight: 200;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; }
+        .navigation-2 .options .cart-popup .cart-content .item-list .single-item .info h4 .trash {
+          border: none;
+          padding: 5px;
+          color: #ac3931;
+          border-radius: 2px;
+          transition: all 0.3s;
+          cursor: pointer; }
+          .navigation-2 .options .cart-popup .cart-content .item-list .single-item .info h4 .trash:hover {
+            transform: translateY(-5px); }
+          .navigation-2 .options .cart-popup .cart-content .item-list .single-item .info h4 .trash:active {
+            transform: translateY(5px); }
+      .navigation-2 .options .cart-popup .cart-content .item-list .single-item .info .price {
+        font-family: "Oswald";
+        color: white; }
+      .navigation-2 .options .cart-popup .cart-content .item-list .single-item .info .quantity {
+        font-family: "Nunito";
+        color: white; }
+  .navigation-2 .options .cart-popup .cart-content .cart-link {
+    padding-top: 6px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between; }
+    .navigation-2 .options .cart-popup .cart-content .cart-link a {
+      text-align: right;
+      font-family: "Oswald";
+      background-color: white;
+      color: #4d8b31;
+      box-sizing: content-box;
+      font-family: "Oswald";
+      text-decoration: none;
+      padding: 5px 6px;
+      border-radius: 2px;
+      transition: all 0.3s; }
+      .navigation-2 .options .cart-popup .cart-content .cart-link a:hover {
+        transform: translateY(-5px); }
+      .navigation-2 .options .cart-popup .cart-content .cart-link a:active {
+        transform: translateY(5px); }
+    .navigation-2 .options .cart-popup .cart-content .cart-link .total {
+      font-family: "Oswald";
+      font-size: 25px;
+      color: white; }
+
+.enter-pincode {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background-color: #0D59A3;
+  top: 5.8em;
+  right: 380px;
+  z-index: 9;
+  -webkit-box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
+  -moz-box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
+  box-shadow: -4px 2px 11px 1px rgba(30, 33, 43, 0.51);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .enter-pincode h4 {
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    font-size: 1.15em;
+    margin-bottom: 10px; }
+  .enter-pincode .input-box {
+    display: flex; }
+    .enter-pincode .input-box input {
+      width: 218px;
+      border-radius: 5px 0 0 5px; }
+    .enter-pincode .input-box button {
+      font-family: "Oswald";
+      padding: 6px 8px;
+      border: none;
+      border-radius: 0px 5px 5px 0px;
+      transition: all 0.3s;
+      outline: none;
+      cursor: pointer;
+      background-color: white;
+      color: #4d8b31;
+      text-transform: uppercase; }
+      .enter-pincode .input-box button:hover {
+        transform: translateY(-5px); }
+      .enter-pincode .input-box button:active {
+        transform: translateY(5px); }
 
 .medicine-details {
   width: 90%;
