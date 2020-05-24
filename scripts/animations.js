@@ -1,3 +1,12 @@
+// ************************ SIDE MENU *********************************
+const sideMenuTimeline = gsap.timeline();
+sideMenuTimeline.to(".navigation-2 .side-menu",{
+    x : "0px",
+})
+
+
+// *********************************************************************
+
 // ********************* HOME PAGE *************************************
 gsap.from(".navigation-2 .search-bar .brand img" , {
     duration : 2,

@@ -1,23 +1,23 @@
 .hero-slider{
     width : 100%;
-    height: 80vh;
+    height: 60vh;
     overflow: hidden;
     .slide-container{
         display: flex;
-        height: 80vh;
+        height: 60vh;
         .slide{
             position: relative;
             width : 98.7vw;
             @media (max-width : 1024px){
                 width : 100vw;
             }
-            height: 80vh;
+            height: 60vh;
             img{
                 width : 98.7vw;
                 @media (max-width : 1024px){
                     width : 100vw;
                 }
-                height: 80vh;
+                height: 60vh;
                 object-fit: cover;   
             }
             .content{
@@ -39,12 +39,12 @@
                 @include card_shadow($black);
                 h4{
                     font-family: $nunito;
-                    font-size: 3em;
+                    font-size: 2.5em;
                     @media (max-width : 420px){
-                        font-size: 2em;
+                        font-size: 1.5em;
                     }
                     @media (max-width : 360px){
-                        font-size: 1.5em;
+                        font-size: 1em;
                     }
                     color: white;
                     text-transform: uppercase;
@@ -52,9 +52,9 @@
                 p{
                     font-family: $oswald;
                     color : white;
-                    font-size: 1.3em;
+                    font-size: 1.1em;
                     @media (max-width : 420px){
-                        font-size: 1em;
+                        font-size: 0.9em;
                     }
                     @media (max-width : 360px){
                         font-size: 0.8em;
