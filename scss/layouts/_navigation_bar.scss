@@ -121,6 +121,7 @@
         @media (max-width : 420px){
             flex-flow: column;
             justify-content: center;
+            
         }
         .brand{
             
@@ -132,6 +133,9 @@
                 }
                 height: 50px;
                 object-fit: cover;
+            }
+            @media (max-width : 420px){
+                padding-bottom: 10px;
             }
         }
         .search{
