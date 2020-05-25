@@ -14,7 +14,7 @@ cartToggleButton.addEventListener("click",()=>{
     if(cartPopupTimeLine.progress() === 0){
         cartPopupTimeLine.play();
     }else if(cartPopupTimeLine.progress() === 1){
-        cartPopupTimeLine.reverse();
+        cartPopupTimeLine.seek(0.6).reverse();
     }
 })
 
@@ -47,7 +47,7 @@ if(hamburger){
 
 // ******************************* HOME PAGE ***********************************
 // WHAT WE DO
-if(typeof(whatWeDo) === 'object'){
+if(typeof(whatWeDo) !== 'undefined'){
     const options = {
         rootMargin : screen.width > 768 ? "-250px" : "-120px",
     };

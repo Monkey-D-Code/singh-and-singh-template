@@ -52,7 +52,8 @@ pincodePopupTimeline.from(".navigation-2 .search-bar .options .enter-pincode",{
 // SLIDER
 var no_of_slides = document.querySelectorAll(".hero-slider .slide-container .slide").length;
 var slideTimeline = gsap.timeline({delay  :1 ,repeat : -1 , yoyo : true});
-var slide_width = document.querySelector(".hero-slider").clientWidth || 0;
+var hero_slider = document.querySelector(".hero-slider");
+var slide_width = hero_slider ? hero_slider.clientWidth : 0;
 
 if(no_of_slides){
     slideTimeline.to(".hero-slider .slide-container" , {
@@ -68,7 +69,7 @@ const whatWeDo = document.querySelector(".our-services");
 const whatWeDoTimeline = gsap.timeline({paused : true});
 if(whatWeDo){
     whatWeDoTimeline.from(".our-services .lead-img",{
-        opacity : 0,
+        x : "80%",
         duration : 0.6,
         ease : "ease",
     }).from(".our-services .list .service",{
@@ -89,7 +90,7 @@ if(topRatedProducts){
         ease : Power1.ease,
     }).from(".top-rated-products .heading",{
         scale : 0,
-        duration : 0.6,
+        duration : 0.9,
         ease : "elastic",
     },"-=0.6").from(".top-rated-products .product-list .single-product",{
         scale : 0,
