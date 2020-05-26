@@ -145,3 +145,20 @@ if(testimonials){
 }
 
 // **********************************************************************
+
+
+// *************************** SEARCH RESULTS ***************************
+const searchResults = document.querySelector(".search-results");
+const searchResultsTimeline = gsap.timeline({paused : false});
+if(searchResults){
+    searchResultsTimeline.from(".search-results .results-container .single-result",{
+        scaleY : 0,
+        opacity : 0,
+        transformOrigin : "top",
+        duration : 1.5,
+        stagger : 0.5,
+    })
+}
+
+
+// **********************************************************************

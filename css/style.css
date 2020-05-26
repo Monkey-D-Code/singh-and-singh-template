@@ -1902,3 +1902,184 @@ footer {
           font-size: 0.8em;
           font-weight: 600;
           color: rgba(77, 139, 49, 0.6); }
+
+.search-results .search-box {
+  background-color: rgba(77, 139, 49, 0.5);
+  border-radius: 5px;
+  padding: 1em;
+  width: 80%;
+  margin: 1em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 1024px) {
+    .search-results .search-box {
+      width: 90%; } }
+  @media (max-width: 768px) {
+    .search-results .search-box {
+      width: 95%; } }
+  @media (max-width: 420px) {
+    .search-results .search-box {
+      flex-flow: column; } }
+  .search-results .search-box .pincode input {
+    font-size: 1.1em;
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 10px; }
+  .search-results .search-box .pincode .pincode-result {
+    font-family: "Nunito";
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #4d8b31; }
+    @media (max-width: 420px) {
+      .search-results .search-box .pincode .pincode-result {
+        margin-bottom: 10px; } }
+  .search-results .search-box .search-query input {
+    font-size: 1.1em;
+    border-radius: 0;
+    margin-bottom: 10px; }
+  .search-results .search-box .search-query .query-result {
+    font-family: "Nunito";
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #4d8b31; }
+  .search-results .search-box .search {
+    font-family: "Oswald";
+    padding: 0.5em 0.7em;
+    font-size: 1.11em;
+    transform: translateY(-14px);
+    border-radius: 0 5px 5px 0;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #4d8b31, #3c6d26);
+    color: white;
+    outline: none; }
+    .search-results .search-box .search:hover {
+      transform: translateY(-5px); }
+    .search-results .search-box .search:active {
+      transform: translateY(5px); }
+    @media (max-width: 420px) {
+      .search-results .search-box .search {
+        margin-top: 8px;
+        transform: translateY(0);
+        width: 85%;
+        border-radius: 5px; } }
+
+.search-results .results-container {
+  margin: 2em auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media (max-width: 1280px) {
+    .search-results .results-container {
+      width: 90%; } }
+  @media (max-width: 768px) {
+    .search-results .results-container {
+      width: 95%; } }
+  .search-results .results-container .single-result {
+    border: 1px solid #4d8b31;
+    display: flex;
+    align-items: center;
+    width: 47%;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 4px; }
+    @media (max-width: 1280px) {
+      .search-results .results-container .single-result {
+        width: 40%; } }
+    @media (max-width: 1024px) {
+      .search-results .results-container .single-result {
+        width: 48%;
+        margin: 0.5em; } }
+    @media (max-width: 768px) {
+      .search-results .results-container .single-result {
+        width: 60%;
+        margin: 0.5em; } }
+    @media (max-width: 420px) {
+      .search-results .results-container .single-result {
+        width: 100%;
+        margin: 0.5em; } }
+    .search-results .results-container .single-result img {
+      width: 150px;
+      margin-right: 8px;
+      height: 100%;
+      object-fit: contain; }
+      @media (max-width: 375px) {
+        .search-results .results-container .single-result img {
+          width: 100px; } }
+    .search-results .results-container .single-result .info h4 a {
+      text-decoration: none;
+      font-family: "Oswald";
+      font-size: 1.1em;
+      font-weight: 500;
+      color: #4d8b31; }
+      @media (max-width: 420px) {
+        .search-results .results-container .single-result .info h4 a {
+          font-size: 1em; } }
+      @media (max-width: 320px) {
+        .search-results .results-container .single-result .info h4 a {
+          font-size: 0.9em; } }
+    .search-results .results-container .single-result .info .prescription {
+      margin: 0.5em 0;
+      display: flex; }
+      .search-results .results-container .single-result .info .prescription div {
+        font-family: "Oswald";
+        font-size: 0.6em;
+        padding: 0.4em;
+        width: fit-content;
+        color: white;
+        border-radius: 3px; }
+      .search-results .results-container .single-result .info .prescription .yes {
+        background-color: #cca000; }
+      .search-results .results-container .single-result .info .prescription .no {
+        background-color: #579e38; }
+    .search-results .results-container .single-result .info .packet {
+      font-family: "Nunito";
+      font-size: 0.9em;
+      color: rgba(30, 33, 43, 0.4); }
+    .search-results .results-container .single-result .info .price {
+      display: flex;
+      margin: 0.5em 0;
+      align-items: center; }
+      .search-results .results-container .single-result .info .price div {
+        font-family: "Oswald"; }
+      .search-results .results-container .single-result .info .price .selling-price {
+        margin-right: 20px;
+        font-weight: bold;
+        color: #4d8b31;
+        font-size: 1.5em; }
+      .search-results .results-container .single-result .info .price .mrp {
+        margin-right: 10px;
+        color: rgba(172, 57, 49, 0.7);
+        text-decoration: line-through; }
+      .search-results .results-container .single-result .info .price .discount {
+        clip-path: polygon(100% 0, 100% 100%, 0% 100%, 30% 50%, 0% 0%);
+        background-color: #0D59A3;
+        padding: 5px 0;
+        padding-left: 30px;
+        padding-right: 8px;
+        border-radius: 0 3px 3px 0;
+        color: white;
+        font-size: 0.8em; }
+    .search-results .results-container .single-result .info .cart-controls {
+      display: flex;
+      justify-content: start; }
+      .search-results .results-container .single-result .info .cart-controls button {
+        font-size: 1.2em;
+        padding: 0.3em 0.5em;
+        color: white;
+        border: none;
+        transition: all 0.3s;
+        cursor: pointer;
+        outline: none; }
+        .search-results .results-container .single-result .info .cart-controls button:hover {
+          transform: translateY(-5px); }
+        .search-results .results-container .single-result .info .cart-controls button:active {
+          transform: translateY(5px); }
+      .search-results .results-container .single-result .info .cart-controls .plus {
+        background-color: #4d8b31; }
+      .search-results .results-container .single-result .info .cart-controls .minus {
+        background-color: #ac3931; }
+      .search-results .results-container .single-result .info .cart-controls .quantity {
+        width: 80px; }
