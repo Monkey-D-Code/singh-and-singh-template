@@ -9,7 +9,18 @@ sideMenuTimeline.to(".navigation-2 .side-menu",{
     x : "250px",
     duration : 0.06,
     stagger : 0.04,
+});
+// pincode toggle
+const pinCodeToggleTimeline = gsap.timeline({paused : true});
+pinCodeToggleTimeline.to(".navigation-2 .side-menu",{
+    width : "90%",
+    duration : 0.3,
+}).from(".navigation-2 .side-menu .enter-pincode-mobile",{
+    scaleX : 0,
+    transformOrigin : "left",
+    duration : 0.3,
 })
+
 // *********************************************************************
 
 // ****************** NAVIGATION MENU **********************************

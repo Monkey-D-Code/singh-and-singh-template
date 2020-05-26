@@ -42,6 +42,13 @@ if(hamburger){
         
     })
 }
+const pincodeMobile = document.querySelector(".navigation-2 .side-menu ul .pincode-toggle");
+if(pincodeMobile){
+    pincodeMobile.addEventListener('click',()=>{
+        if(pinCodeToggleTimeline.progress() === 0) pinCodeToggleTimeline.play();
+        else if(pinCodeToggleTimeline.progress() === 1) pinCodeToggleTimeline.reverse();
+    })
+}
 // ****************************************************************************
 
 

@@ -405,24 +405,57 @@ input {
         transition: all 0.45s;
         border-radius: 5px;
         padding: 0.4em;
-        user-select: none; }
+        user-select: none;
+        color: white; }
         .navigation-2 .side-menu ul li a {
           text-decoration: none;
           color: white; }
         .navigation-2 .side-menu ul li:hover {
           background-color: white;
-          transform: translateY(-5px); }
+          transform: translateY(-5px);
+          color: #4d8b31; }
           .navigation-2 .side-menu ul li:hover a {
             color: #4d8b31; }
         .navigation-2 .side-menu ul li:active {
           transform: translateY(5px); }
+      .navigation-2 .side-menu ul .pincode-toggle {
+        display: flex;
+        align-items: center;
+        margin-right: 10px; }
+        .navigation-2 .side-menu ul .pincode-toggle i {
+          margin-right: 5px; }
       .navigation-2 .side-menu ul .small-screen {
         display: none; }
+        .navigation-2 .side-menu ul .small-screen:first-child {
+          display: flex;
+          justify-content: space-between; }
         .navigation-2 .side-menu ul .small-screen a {
           color: white; }
         @media (max-width: 768px) {
           .navigation-2 .side-menu ul .small-screen {
             display: block; } }
+    .navigation-2 .side-menu .enter-pincode-mobile {
+      margin-top: 0.2em;
+      width: 100%; }
+      .navigation-2 .side-menu .enter-pincode-mobile .input-box {
+        display: flex;
+        justify-self: start; }
+        .navigation-2 .side-menu .enter-pincode-mobile .input-box input {
+          width: 70%;
+          border-radius: 5px 0 0 5px; }
+        .navigation-2 .side-menu .enter-pincode-mobile .input-box button {
+          font-family: "Nunito";
+          padding: 0.3em 0.9em;
+          border: none;
+          background-color: #4d8b31;
+          color: white;
+          transition: all 0.3s;
+          outline: none;
+          border-radius: 0 5px 5px 0; }
+          .navigation-2 .side-menu .enter-pincode-mobile .input-box button:hover {
+            transform: translateY(-5px); }
+          .navigation-2 .side-menu .enter-pincode-mobile .input-box button:active {
+            transform: translateY(5px); }
   .navigation-2 .active {
     right: -1px; }
 
