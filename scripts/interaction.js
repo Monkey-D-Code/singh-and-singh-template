@@ -1,12 +1,12 @@
 // **************** NAVIGATION BAR INTERACTION ***************************
-const navObserver = new IntersectionObserver((entries)=>{
-    if(entries[0].isIntersecting){
-        navAminationTimeline.play();
-    }else{
-        navAminationTimeline.reverse();
-    }
-});
-navObserver.observe(document.querySelector(".navigation-2"))
+// const navObserver = new IntersectionObserver((entries)=>{
+//     if(entries[0].isIntersecting){
+//         navAminationTimeline.play();
+//     }else{
+//         navAminationTimeline.reverse();
+//     }
+// });
+// navObserver.observe(document.querySelector(".navigation-2"))
 
 // cart popup toggle
 const cartToggleButton = document.querySelector(".navigation-2 .search-bar .options .cart-toggle");
@@ -53,7 +53,6 @@ if(pincodeMobile){
 
 
 // ********************************* ORDER MEDICINE ******************************
-const testimonials = document.querySelector(".testimonials");
 if(testimonials){
     const options = {
         rootMargin : screen.width > 768 ? "-250px" : "-100px",
@@ -85,7 +84,7 @@ if(typeof(whatWeDo) !== 'undefined'){
             whatWeDoTimeline.reverse();
         }
     } , options);   
-    whatWeDoObserver.observe(whatWeDo);
+    if(whatWeDo) whatWeDoObserver.observe(whatWeDo);
 }
 
 // TOP RATED PRODUCTS

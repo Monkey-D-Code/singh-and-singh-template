@@ -92,6 +92,9 @@
                         margin-bottom: 0.3em;
                         border-radius: 5px;
                     }
+                    @media (max-width : 320px){
+                        font-size: 0.9em;
+                    }
                 }
                 .pincode{
                     width : 150px;

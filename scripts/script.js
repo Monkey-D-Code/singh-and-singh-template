@@ -12,3 +12,17 @@ document.onreadystatechange = () => {
         preloader.style.display = "block";
     }
 };
+
+function searchMedicine(event){
+    const baseUrl = `${window.location.protocol}//${window.location.hostname}:${window.location.port}`;
+    window.location = `${baseUrl}/search-results.html`
+}
+
+const navBarSearch = document.querySelector(".navigation-2 .search-bar .search button");
+if(navBarSearch){
+    navBarSearch.addEventListener('click',(event)=>searchMedicine(event));
+}
+const orderMedicineSearch = document.querySelector(".order-medinices .search-medicine .search-input-container .search-field .search-med");
+if(orderMedicineSearch){
+    orderMedicineSearch.addEventListener('click',(event)=>searchMedicine(event));
+}

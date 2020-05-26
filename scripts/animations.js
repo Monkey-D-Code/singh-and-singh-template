@@ -24,7 +24,7 @@ pinCodeToggleTimeline.to(".navigation-2 .side-menu",{
 // *********************************************************************
 
 // ****************** NAVIGATION MENU **********************************
-const navAminationTimeline = gsap.timeline({paused : true})
+const navAminationTimeline = gsap.timeline({paused : false})
 navAminationTimeline.from(".navigation-2 .search-bar .brand img" , {
     duration : 1,
     width : "50px",
@@ -133,12 +133,15 @@ if(featuredBrands){
 
 // *************************** ORDER MEDICINE ***************************
 const testimonialTimeline = gsap.timeline({paused : true});
-testimonialTimeline.from(".testimonials .testimonial-list .single-testimonial",{
-    scale : 0,
-    transformOrigin : "top left",
-    duration : 1,
-    stagger : 0.3,
-    delay : 0.6,
-})
+const testimonials = document.querySelector(".testimonials");
+if(testimonials){
+    testimonialTimeline.from(".testimonials .testimonial-list .single-testimonial",{
+        scale : 0,
+        transformOrigin : "top left",
+        duration : 1,
+        stagger : 0.3,
+        delay : 0.6,
+    })
+}
 
 // **********************************************************************
