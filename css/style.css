@@ -426,14 +426,14 @@ input {
           margin-right: 5px; }
       .navigation-2 .side-menu ul .small-screen {
         display: none; }
-        .navigation-2 .side-menu ul .small-screen:first-child {
-          display: flex;
-          justify-content: space-between; }
         .navigation-2 .side-menu ul .small-screen a {
           color: white; }
         @media (max-width: 768px) {
           .navigation-2 .side-menu ul .small-screen {
-            display: block; } }
+            display: block; }
+            .navigation-2 .side-menu ul .small-screen:first-child {
+              display: flex;
+              justify-content: space-between; } }
     .navigation-2 .side-menu .enter-pincode-mobile {
       margin-top: 0.2em;
       width: 100%; }
@@ -1759,3 +1759,234 @@ footer {
       -webkit-background-clip: text;
       -moz-background-clip: text;
       color: transparent; }
+
+.order-medinices .heading {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .order-medinices .heading img {
+    width: 10em; }
+    @media (max-width: 420px) {
+      .order-medinices .heading img {
+        width: 6em; } }
+  .order-medinices .heading h1 {
+    font-family: "Nunito";
+    text-transform: uppercase;
+    font-size: 2em;
+    background-image: linear-gradient(to right, #4d8b31, #ffc800);
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent; }
+    @media (max-width: 420px) {
+      .order-medinices .heading h1 {
+        font-size: 1.1em; } }
+    @media (max-width: 320px) {
+      .order-medinices .heading h1 {
+        font-size: 0.9em; } }
+
+.order-medinices .search-medicine {
+  margin: 2em auto;
+  width: 80%;
+  padding: 1.5em;
+  border-radius: 5px;
+  border: 1px solid rgba(77, 139, 49, 0.5);
+  background-color: rgba(77, 139, 49, 0.2); }
+  @media (max-width: 420px) {
+    .order-medinices .search-medicine {
+      width: 95%; } }
+  .order-medinices .search-medicine .our-features {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .order-medinices .search-medicine .our-features .one-feature {
+      display: flex;
+      align-items: center; }
+      .order-medinices .search-medicine .our-features .one-feature img {
+        width: 50px;
+        margin-right: 10px; }
+        @media (max-width: 420px) {
+          .order-medinices .search-medicine .our-features .one-feature img {
+            width: 25px;
+            margin-right: 4px; } }
+      .order-medinices .search-medicine .our-features .one-feature h5 {
+        font-family: "Nunito";
+        text-transform: uppercase;
+        color: rgba(77, 139, 49, 0.8); }
+        @media (max-width: 420px) {
+          .order-medinices .search-medicine .our-features .one-feature h5 {
+            font-size: 0.5em; } }
+  .order-medinices .search-medicine .search-input-container {
+    margin: 2em auto;
+    width: fit-content; }
+    .order-medinices .search-medicine .search-input-container h4 {
+      font-family: "Oswald";
+      font-size: 1.6em;
+      color: #4d8b31;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 0.5em; }
+      @media (max-width: 420px) {
+        .order-medinices .search-medicine .search-input-container h4 {
+          font-size: 1.1em; } }
+      @media (max-width: 320px) {
+        .order-medinices .search-medicine .search-input-container h4 {
+          font-size: 0.8em; } }
+    .order-medinices .search-medicine .search-input-container .search-field {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 420px) {
+        .order-medinices .search-medicine .search-input-container .search-field {
+          flex-flow: column; } }
+      .order-medinices .search-medicine .search-input-container .search-field input {
+        font-size: 1.1em;
+        border-radius: 0;
+        outline: none; }
+        @media (max-width: 420px) {
+          .order-medinices .search-medicine .search-input-container .search-field input {
+            width: 100%;
+            border: none;
+            margin-bottom: 0.3em;
+            border-radius: 5px; } }
+      .order-medinices .search-medicine .search-input-container .search-field .pincode {
+        width: 150px;
+        border-right: 2px solid rgba(77, 139, 49, 0.7);
+        border-radius: 5px 0 0 5px; }
+        @media (max-width: 420px) {
+          .order-medinices .search-medicine .search-input-container .search-field .pincode {
+            width: 100%;
+            border: none; } }
+      .order-medinices .search-medicine .search-input-container .search-field .search-med {
+        font-size: 1.1em;
+        padding: 10px 20px;
+        background-color: #4d8b31;
+        border: none;
+        outline: none;
+        transition: all 0.4s;
+        color: white;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0; }
+        .order-medinices .search-medicine .search-input-container .search-field .search-med:hover {
+          transform: translateY(-5px); }
+        .order-medinices .search-medicine .search-input-container .search-field .search-med:active {
+          transform: translateY(5px); }
+        @media (max-width: 420px) {
+          .order-medinices .search-medicine .search-input-container .search-field .search-med {
+            width: 100%;
+            border: none;
+            margin-bottom: 0.3em;
+            border-radius: 5px; } }
+  .order-medinices .search-medicine .order-by-prescription {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content; }
+    .order-medinices .search-medicine .order-by-prescription img {
+      width: 50px; }
+      @media (max-width: 420px) {
+        .order-medinices .search-medicine .order-by-prescription img {
+          width: 40px; } }
+    .order-medinices .search-medicine .order-by-prescription h4 a {
+      text-decoration: none;
+      font-family: "Nunito";
+      text-transform: uppercase;
+      font-size: 1.1em;
+      color: rgba(77, 139, 49, 0.8); }
+      @media (max-width: 420px) {
+        .order-medinices .search-medicine .order-by-prescription h4 a {
+          font-size: 0.9em; } }
+      @media (max-width: 320px) {
+        .order-medinices .search-medicine .order-by-prescription h4 a {
+          font-size: 0.8em; } }
+
+.testimonials {
+  margin: 3em 0; }
+  .testimonials .heading {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 1em auto; }
+    .testimonials .heading img {
+      width: 7em; }
+    .testimonials .heading h1 {
+      font-family: "Nunito";
+      font-size: 2em;
+      text-transform: uppercase;
+      background-image: linear-gradient(to right, #4d8b31, #ffc800);
+      width: fit-content;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      color: transparent; }
+    @media (max-width: 420px) {
+      .testimonials .heading img {
+        width: 6em; }
+      .testimonials .heading h1 {
+        font-size: 1.3em; } }
+  .testimonials .testimonial-list {
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 420px) {
+      .testimonials .testimonial-list {
+        width: 90%; } }
+    .testimonials .testimonial-list .single-testimonial {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5em 0; }
+      @media (max-width: 420px) {
+        .testimonials .testimonial-list .single-testimonial {
+          margin: 1em 0; } }
+      .testimonials .testimonial-list .single-testimonial:nth-child(odd) {
+        flex-flow: row-reverse; }
+      .testimonials .testimonial-list .single-testimonial .user {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px; }
+        .testimonials .testimonial-list .single-testimonial .user img {
+          width: 6em;
+          margin-bottom: 10px; }
+          @media (max-width: 420px) {
+            .testimonials .testimonial-list .single-testimonial .user img {
+              width: 5em; } }
+        .testimonials .testimonial-list .single-testimonial .user h4 {
+          font-family: "Oswald";
+          background-image: linear-gradient(to bottom, #0D59A3, #0b4c8b);
+          padding: 0.3em 0.4em;
+          border-radius: 4px;
+          color: white;
+          font-weight: 400; }
+          @media (max-width: 420px) {
+            .testimonials .testimonial-list .single-testimonial .user h4 {
+              font-size: 0.8em; } }
+          @media (max-width: 320px) {
+            .testimonials .testimonial-list .single-testimonial .user h4 {
+              font-size: 0.7em; } }
+      .testimonials .testimonial-list .single-testimonial .message {
+        width: 65%; }
+        .testimonials .testimonial-list .single-testimonial .message .text {
+          font-family: "Oswald";
+          font-weight: 400;
+          font-size: 0.9em;
+          margin-bottom: 10px;
+          color: #5ea93c; }
+          @media (max-width: 420px) {
+            .testimonials .testimonial-list .single-testimonial .message .text {
+              font-size: 0.8em; } }
+          @media (max-width: 420px) {
+            .testimonials .testimonial-list .single-testimonial .message .text {
+              font-size: 0.7em; } }
+        .testimonials .testimonial-list .single-testimonial .message .datetime {
+          font-family: "Nunito";
+          font-size: 0.8em;
+          font-weight: 600;
+          color: rgba(77, 139, 49, 0.6); }

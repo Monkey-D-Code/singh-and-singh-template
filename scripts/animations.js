@@ -129,3 +129,16 @@ if(featuredBrands){
 }
 
 // **********************************************************************
+
+
+// *************************** ORDER MEDICINE ***************************
+const testimonialTimeline = gsap.timeline({paused : true});
+testimonialTimeline.from(".testimonials .testimonial-list .single-testimonial",{
+    scale : 0,
+    transformOrigin : "top left",
+    duration : 1,
+    stagger : 0.3,
+    delay : 0.6,
+})
+
+// **********************************************************************

@@ -52,6 +52,26 @@ if(pincodeMobile){
 // ****************************************************************************
 
 
+// ********************************* ORDER MEDICINE ******************************
+const testimonials = document.querySelector(".testimonials");
+if(testimonials){
+    const options = {
+        rootMargin : screen.width > 768 ? "-250px" : "-100px",
+    };
+    const testimonialsObserver = new IntersectionObserver((entries)=>{
+        if(entries[0].isIntersecting){
+            testimonialTimeline.play();
+        } else{
+            testimonialTimeline.reverse();
+        }
+    } , options);   
+    testimonialsObserver.observe(testimonials);
+
+
+}
+// *********************************************************************************
+
+
 // ******************************* HOME PAGE ***********************************
 // WHAT WE DO
 if(typeof(whatWeDo) !== 'undefined'){
@@ -101,6 +121,7 @@ if(featuredBrands){
 
 
 // *******************************************************************************
+
 
 // Medicine Quantity Change
 var plus = document.querySelector(".medicine-details .product-information .quantity .plus");

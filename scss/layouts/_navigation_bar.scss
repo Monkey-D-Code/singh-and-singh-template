@@ -321,17 +321,18 @@
             }
             .small-screen{
                 display: none;
-                &:first-child{
-                    
-                    display: flex;
-                    justify-content: space-between;
-        
-                }
+                
                 a{
                     color: white;
                 }
                 @media (max-width : 768px){
                     display: block;
+                    &:first-child{
+                    
+                        display: flex;
+                        justify-content: space-between;
+            
+                    }
                 }
             }
         }
