@@ -29,9 +29,13 @@
 @import './layouts/hero_slider';
 @import './layouts/cart_popup';
 @import './layouts/pincode_popup';
+@import './layouts/products_listing';
 
 // importing pages
 @import './pages/medicine_details';
 @import './pages/cart';
 @import './pages/order_medicines';
 @import './pages/search_results';
+@import './pages/brand_details';
+@import './pages/category_details';
+@import './pages/category_list';

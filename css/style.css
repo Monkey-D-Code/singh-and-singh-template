@@ -1136,6 +1136,112 @@ footer {
       .enter-pincode .input-box button:active {
         transform: translateY(5px); }
 
+.products-listing {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5em 0; }
+  .products-listing .single-product {
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
+    box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
+    margin: 1em;
+    width: 450px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0 0 60px 0; }
+    @media (max-width: 1024px) {
+      .products-listing .single-product {
+        margin: 0.5em; } }
+    @media (max-width: 768px) {
+      .products-listing .single-product {
+        width: 350px;
+        padding-bottom: 10px; } }
+    @media (max-width: 360px) {
+      .products-listing .single-product {
+        width: 320px;
+        padding-bottom: 8px; } }
+    @media (max-width: 320px) {
+      .products-listing .single-product {
+        width: 300px;
+        padding-bottom: 8px; } }
+    .products-listing .single-product img {
+      width: 200px;
+      margin-right: 3%; }
+      @media (max-width: 768px) {
+        .products-listing .single-product img {
+          width: 120px; } }
+      @media (max-width: 360px) {
+        .products-listing .single-product img {
+          width: 100px; } }
+      @media (max-width: 320px) {
+        .products-listing .single-product img {
+          width: 80px; } }
+    .products-listing .single-product .info {
+      padding-right: 10px; }
+      @media (max-width: 420px) {
+        .products-listing .single-product .info {
+          padding-right: 5px; } }
+      .products-listing .single-product .info h4 {
+        font-family: 1.1em; }
+        .products-listing .single-product .info h4 a {
+          text-decoration: none;
+          font-family: "Oswald";
+          color: #4d8b31;
+          font-weight: 500; }
+      .products-listing .single-product .info .price {
+        display: flex;
+        margin: 0.5em 0;
+        justify-content: flex-start;
+        align-items: center; }
+        .products-listing .single-product .info .price p {
+          font-family: "Nunito";
+          font-weight: bold;
+          text-transform: uppercase; }
+        .products-listing .single-product .info .price .selling-price {
+          margin-right: 15px;
+          font-size: 1.1em;
+          color: #4d8b31; }
+        .products-listing .single-product .info .price .mrp {
+          margin-right: 15px;
+          text-decoration: line-through;
+          color: #ac3931; }
+        .products-listing .single-product .info .price .offer {
+          font-size: 0.7em;
+          background-color: #0D59A3;
+          padding: 0.3em 0.4em 0.3em 1.5em;
+          color: white;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 20% 50%);
+          border-radius: 0 3px 3px 0; }
+      .products-listing .single-product .info .cart-controls {
+        display: flex;
+        align-items: center;
+        user-select: none; }
+        .products-listing .single-product .info .cart-controls button {
+          font-size: 1.5em;
+          border: none;
+          padding: 3px 10px;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          color: white;
+          transition: all 0.3s; }
+          .products-listing .single-product .info .cart-controls button:hover {
+            transform: translateY(-5px); }
+          .products-listing .single-product .info .cart-controls button:active {
+            transform: translateY(5px); }
+        .products-listing .single-product .info .cart-controls input {
+          width: 60px;
+          text-align: center; }
+        .products-listing .single-product .info .cart-controls .plus {
+          background-color: #4d8b31;
+          border-radius: 4px 0 0 4px; }
+        .products-listing .single-product .info .cart-controls .minus {
+          background-color: #ac3931;
+          border-radius: 0 4px 4px 0; }
+
 .medicine-details {
   width: 90%;
   margin: 0 auto;
@@ -2083,3 +2189,112 @@ footer {
         background-color: #ac3931; }
       .search-results .results-container .single-result .info .cart-controls .quantity {
         width: 80px; }
+
+.brand-details .heading {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .brand-details .heading img {
+    width: 10em; }
+    @media (max-width: 420px) {
+      .brand-details .heading img {
+        width: 8em; } }
+  .brand-details .heading h1 {
+    font-family: "Nunito";
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #4d8b31, #ffc800);
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent; }
+
+.category-details .heading {
+  width: 100%;
+  position: relative;
+  height: 50vh; }
+  .category-details .heading img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; }
+  .category-details .heading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #4d8b31;
+    font-family: "Nunito";
+    text-transform: uppercase;
+    padding: 0.5em 0.7em;
+    border-radius: 5px; }
+
+.category-list .heading {
+  width: 100%;
+  height: 50vh;
+  position: relative; }
+  .category-list .heading img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; }
+  .category-list .heading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Nunito";
+    text-transform: uppercase;
+    padding: 0.5em 0.8em;
+    background-color: white;
+    border-radius: 5px;
+    color: #4d8b31; }
+
+.category-list .all-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 1em auto; }
+  @media (max-width: 768px) {
+    .category-list .all-categories {
+      width: 95%; } }
+  .category-list .all-categories .single-category {
+    position: relative;
+    margin: 0.5em;
+    width: 300px;
+    height: 200px; }
+    .category-list .all-categories .single-category img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      filter: blur(1px); }
+    .category-list .all-categories .single-category h4 {
+      position: absolute;
+      top: 50%;
+      left: -2px;
+      padding: 0.5em 2em 0.5em 1em;
+      background-color: white;
+      font-family: "Oswald";
+      transform: translateY(-50%);
+      clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%); }
+      .category-list .all-categories .single-category h4 a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        color: #4d8b31; }
+    .category-list .all-categories .single-category .offer {
+      position: absolute;
+      top: 0;
+      font-family: "Oswald";
+      background-color: #ac3931;
+      padding: 0.3em 0.8em;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      color: white;
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
+      -moz-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
+      box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35); }
