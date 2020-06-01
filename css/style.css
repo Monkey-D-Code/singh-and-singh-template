@@ -2488,3 +2488,273 @@ footer {
           margin: 0.5em 0; } }
       .profile .pages a:hover {
         color: #b38c00; }
+
+.your-orders {
+  margin: 3em 0; }
+  .your-orders .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .your-orders .heading img {
+      width: 100px; }
+    .your-orders .heading h1 {
+      text-transform: uppercase;
+      font-size: 2em;
+      font-family: "Nunito";
+      background-image: linear-gradient(to right, #4d8b31, #ffc800);
+      width: fit-content;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      color: transparent; }
+  .your-orders .filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0; }
+    .your-orders .filters h4 {
+      font-family: "Oswald";
+      font-size: 1.1em;
+      margin: 0 0.2em;
+      border-right: 1px solid rgba(13, 89, 163, 0.5);
+      padding: 0 0.7em;
+      user-select: none;
+      transition: all 0.3s;
+      cursor: pointer;
+      color: #4d8b31;
+      font-weight: 400; }
+      @media (max-width: 420px) {
+        .your-orders .filters h4 {
+          font-size: 0.9em;
+          margin: 0 0.1em;
+          padding: 0 0.4em; } }
+      .your-orders .filters h4:last-child {
+        border: none; }
+      .your-orders .filters h4:hover {
+        color: #b38c00; }
+  .your-orders .order-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .your-orders .order-list .single-order {
+      width: 300px;
+      margin: 1em; }
+      .your-orders .order-list .single-order .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em;
+        background-color: rgba(77, 139, 49, 0.5);
+        margin-bottom: 5px; }
+        .your-orders .order-list .single-order .info h4 {
+          font-family: "Oswald";
+          text-transform: uppercase;
+          color: #4d8b31;
+          font-weight: 500; }
+      .your-orders .order-list .single-order .meds {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .your-orders .order-list .single-order .meds .single-med {
+          margin: 5px 0;
+          width: 145px;
+          background-color: rgba(77, 139, 49, 0.2);
+          display: grid;
+          grid-template-rows: 2fr 1fr; }
+          .your-orders .order-list .single-order .meds .single-med h4 {
+            padding: 8px;
+            font-family: "Oswald";
+            font-size: 0.7em;
+            font-weight: 400;
+            color: #4d8b31; }
+          .your-orders .order-list .single-order .meds .single-med .quantity {
+            background-color: #4d8b31;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 5px;
+            padding: 0.1em; }
+            .your-orders .order-list .single-order .meds .single-med .quantity p {
+              font-family: "Oswald";
+              font-size: 0.7em;
+              color: white; }
+      .your-orders .order-list .single-order .order-status {
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; }
+        .your-orders .order-list .single-order .order-status button {
+          outline: none;
+          padding: 5px 0;
+          color: white;
+          font-family: "Oswald";
+          text-transform: uppercase;
+          border: none;
+          transition: all 0.3s; }
+          .your-orders .order-list .single-order .order-status button:first-child {
+            background-color: #0D59A3; }
+          .your-orders .order-list .single-order .order-status button:nth-child(2) {
+            background-color: #997800; }
+          .your-orders .order-list .single-order .order-status button:last-child {
+            background-color: #4d8b31; }
+      .your-orders .order-list .single-order .cancel-order {
+        width: 300px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 0;
+        background-color: #ac3931;
+        color: white;
+        font-family: "Oswald";
+        transition: all 0.3s;
+        text-transform: uppercase; }
+        .your-orders .order-list .single-order .cancel-order:hover {
+          transform: translateY(-5px); }
+        .your-orders .order-list .single-order .cancel-order:active {
+          transform: translateY(5px); }
+
+.your-prescription {
+  margin: 2em 0; }
+  .your-prescription .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .your-prescription .heading img {
+      width: 80px;
+      margin-right: 10px; }
+    .your-prescription .heading h1 {
+      font-family: "Nunito";
+      text-transform: uppercase;
+      background-image: linear-gradient(to right, #4d8b31, #ffc800);
+      width: fit-content;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      color: transparent; }
+  .your-prescription .filters {
+    background-image: linear-gradient(to bottom, #4d8b31, #386524);
+    display: flex;
+    align-items: center;
+    margin: 0.5em auto;
+    width: fit-content;
+    justify-content: space-between;
+    border-radius: 5px; }
+    .your-prescription .filters h4 {
+      margin: 0 10px;
+      padding: 1em;
+      font-family: "Oswald";
+      color: white;
+      font-weight: 400;
+      user-select: none;
+      cursor: pointer;
+      transition: all 0.3s; }
+      @media (max-width: 420px) {
+        .your-prescription .filters h4 {
+          margin: 0 5px;
+          padding: 0.5em; } }
+      .your-prescription .filters h4:hover {
+        background-color: white;
+        color: #4d8b31; }
+      .your-prescription .filters h4:active {
+        transform: translateY(5px); }
+  .your-prescription .prescription-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    .your-prescription .prescription-list .uploaded {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      margin: 1em; }
+      .your-prescription .prescription-list .uploaded img {
+        width: 150px; }
+      .your-prescription .prescription-list .uploaded .info {
+        width: 150px; }
+        .your-prescription .prescription-list .uploaded .info .date {
+          background-color: #4d8b31;
+          color: white;
+          font-family: "Nunito";
+          text-transform: uppercase;
+          padding: 10px 0;
+          text-align: center;
+          font-weight: bold; }
+        .your-prescription .prescription-list .uploaded .info .delete {
+          background-color: #ac3931;
+          color: white;
+          border: none;
+          outline: none;
+          width: 150px;
+          font-family: "Oswald";
+          padding: 5px 0;
+          transition: all 0.3s;
+          cursor: pointer; }
+          .your-prescription .prescription-list .uploaded .info .delete:hover {
+            transform: translateY(-5px); }
+          .your-prescription .prescription-list .uploaded .info .delete:active {
+            transform: translateY(5px); }
+    .your-prescription .prescription-list .confirmed {
+      margin: 1em; }
+      .your-prescription .prescription-list .confirmed .details {
+        width: 300px;
+        display: flex;
+        align-items: center; }
+        .your-prescription .prescription-list .confirmed .details img {
+          width: 150px; }
+        .your-prescription .prescription-list .confirmed .details .info {
+          width: 150px;
+          text-align: center;
+          font-family: "Oswald"; }
+          .your-prescription .prescription-list .confirmed .details .info .date {
+            background-color: #4d8b31;
+            padding: 5px 0;
+            color: white;
+            text-transform: uppercase; }
+          .your-prescription .prescription-list .confirmed .details .info .total {
+            color: #4d8b31; }
+          .your-prescription .prescription-list .confirmed .details .info .quant {
+            background-color: #0D59A3;
+            padding: 5px 0;
+            color: white; }
+      .your-prescription .prescription-list .confirmed .meds {
+        width: 300px; }
+        .your-prescription .prescription-list .confirmed .meds .one-med {
+          display: flex;
+          align-items: stretch;
+          justify-content: space-between;
+          background-color: rgba(77, 139, 49, 0.3);
+          margin: 0.3em 0; }
+          .your-prescription .prescription-list .confirmed .meds .one-med h4 {
+            padding: 10px;
+            width: 240px;
+            font-family: "Oswald";
+            color: #4d8b31;
+            font-size: 0.9em;
+            font-weight: 450; }
+          .your-prescription .prescription-list .confirmed .meds .one-med .quantity {
+            padding: 10px;
+            background-color: #4d8b31; }
+            .your-prescription .prescription-list .confirmed .meds .one-med .quantity p {
+              font-family: "Oswald";
+              color: white; }
+      .your-prescription .prescription-list .confirmed .options {
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+        .your-prescription .prescription-list .confirmed .options button {
+          padding: 5px 0;
+          border: 0;
+          outline: 0;
+          color: white;
+          font-family: "Oswald";
+          transition: all 0.3s;
+          cursor: pointer; }
+          .your-prescription .prescription-list .confirmed .options button:hover {
+            transform: translateY(-5px); }
+          .your-prescription .prescription-list .confirmed .options button:active {
+            transform: translateY(5px); }
+          .your-prescription .prescription-list .confirmed .options button:first-child {
+            background-color: #4d8b31; }
+          .your-prescription .prescription-list .confirmed .options button:last-child {
+            background-color: #ac3931; }
