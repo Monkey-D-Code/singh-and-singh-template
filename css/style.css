@@ -157,7 +157,8 @@ input {
   box-shadow: 3px 4px 5px 0px rgba(9, 63, 116, 0.42);
   position: sticky;
   top: 0;
-  z-index: 19; }
+  z-index: 19;
+  width: 100%; }
   .navigation-2 .search-bar {
     padding-top: 10px;
     display: flex;
@@ -237,6 +238,9 @@ input {
           @media (max-width: 1024px) {
             .navigation-2 .search-bar .options ul li {
               font-size: 0.8em; } }
+          .navigation-2 .search-bar .options ul li a {
+            text-decoration: none;
+            color: white; }
         .navigation-2 .search-bar .options ul .cart-toggle, .navigation-2 .search-bar .options ul .pincode-toggle {
           padding: 0.2em;
           border-radius: 3px;
@@ -2265,13 +2269,14 @@ footer {
     position: relative;
     margin: 0.5em;
     width: 300px;
-    height: 200px; }
+    height: 200px;
+    transition: all 0.3em; }
     .category-list .all-categories .single-category img {
       width: 300px;
       height: 200px;
       object-fit: cover;
       clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-      filter: blur(1px); }
+      filter: blur(0.5px); }
     .category-list .all-categories .single-category h4 {
       position: absolute;
       top: 50%;
@@ -2298,3 +2303,188 @@ footer {
       -webkit-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
       -moz-box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35);
       box-shadow: 2px 3px 5px 0px rgba(30, 33, 43, 0.35); }
+
+.login {
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  .login .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    display: flex;
+    flex-flow: column; }
+    .login .login-container h1 {
+      font-family: "Nunito";
+      text-transform: uppercase;
+      font-size: 1.8em;
+      color: white; }
+    .login .login-container form {
+      display: flex;
+      flex-flow: column; }
+      .login .login-container form input {
+        margin: 0.2em 0;
+        width: 300px; }
+      .login .login-container form button {
+        padding: 0.5em 0.3em;
+        border-radius: 5px;
+        transition: all 0.3s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-family: "Oswald";
+        color: #4d8b31;
+        margin-top: 0.7em; }
+        .login .login-container form button:hover {
+          transform: translateY(-5px); }
+        .login .login-container form button:active {
+          transform: translateY(5px); }
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em 0;
+  flex-wrap: wrap; }
+  .features .single-feature {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 139, 49, 0.5);
+    padding: 1em;
+    border-radius: 5px;
+    width: 250px;
+    margin: 0.5em 0; }
+    .features .single-feature img {
+      width: 80px;
+      margin-bottom: 10px; }
+    .features .single-feature h4 {
+      color: #4d8b31;
+      font-family: "Nunito";
+      text-transform: uppercase; }
+
+.verify-otp {
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  .verify-otp .verify-otp-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .verify-otp .verify-otp-container h1 {
+      font-family: "Nunito";
+      text-transform: uppercase;
+      color: white; }
+    .verify-otp .verify-otp-container form {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 300px;
+      scale: 1.5; }
+      .verify-otp .verify-otp-container form input {
+        width: 150px;
+        border-radius: 5px 0 0 5px; }
+      .verify-otp .verify-otp-container form button {
+        font-family: "Oswald";
+        padding: 0.5em 0.5em;
+        border: 0;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #4d8b31;
+        background-color: white;
+        outline: #4d8b31; }
+        .verify-otp .verify-otp-container form button:hover {
+          transform: translateY(-5px); }
+        .verify-otp .verify-otp-container form button:active {
+          transform: translateY(5px); }
+    .verify-otp .verify-otp-container .message {
+      margin: 0.3em 0;
+      font-family: "Oswald";
+      display: flex;
+      align-items: center;
+      font-size: 0.8em;
+      color: #ac3931; }
+      .verify-otp .verify-otp-container .message button {
+        background-color: #ac3931;
+        color: white;
+        border: none;
+        padding: 0.2em 0.3em;
+        cursor: pointer;
+        transition: all 0.3s;
+        outline: none; }
+        .verify-otp .verify-otp-container .message button:hover {
+          transform: translateY(-5px); }
+        .verify-otp .verify-otp-container .message button:active {
+          transform: translateY(5px); }
+
+.profile {
+  margin: 2em 0; }
+  .profile .user {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .profile .user img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px; }
+    .profile .user h4 {
+      font-family: "Nunito";
+      font-size: 1.5em;
+      color: #4d8b31; }
+    .profile .user .info p {
+      font-family: "Oswald";
+      font-size: 0.8em;
+      color: #0D59A3; }
+  .profile .options {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center; }
+    .profile .options a {
+      margin: 0 0.5em;
+      text-decoration: none;
+      font-family: "Oswald";
+      border: 1px solid #4d8b31;
+      padding: 0.2em 0.3em;
+      border-radius: 3px;
+      transition: all 0.3s;
+      color: #4d8b31; }
+      .profile .options a:hover {
+        transform: translateY(-5px); }
+      .profile .options a:active {
+        transform: translateY(5px); }
+  .profile .pages {
+    margin: 0.5em auto;
+    width: fit-content;
+    background-color: rgba(77, 139, 49, 0.4);
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap; }
+    @media (max-width: 420px) {
+      .profile .pages {
+        width: 300px;
+        flex-flow: column; } }
+    .profile .pages a {
+      margin: 0 1em;
+      text-decoration: none;
+      font-family: "Nunito";
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #4d8b31;
+      transition: all 0.3s; }
+      @media (max-width: 420px) {
+        .profile .pages a {
+          border-bottom: 1px solid #4d8b31;
+          margin: 0.5em 0; } }
+      .profile .pages a:hover {
+        color: #b38c00; }
