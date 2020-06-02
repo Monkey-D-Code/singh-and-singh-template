@@ -2758,3 +2758,105 @@ footer {
             background-color: #4d8b31; }
           .your-prescription .prescription-list .confirmed .options button:last-child {
             background-color: #ac3931; }
+
+.order-by-prescription .heading {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .order-by-prescription .heading img {
+    width: 80px;
+    margin-right: 5px; }
+  .order-by-prescription .heading h1 {
+    font-family: "Nunito";
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #4d8b31, #ffc800);
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent; }
+    @media (max-width: 420px) {
+      .order-by-prescription .heading h1 {
+        font-size: 0.9em; } }
+
+.order-by-prescription .capture-container {
+  width: 40%;
+  margin: 0.5em auto;
+  position: relative; }
+  @media (max-width: 768px) {
+    .order-by-prescription .capture-container {
+      width: 80%; } }
+  @media (max-width: 360px) {
+    .order-by-prescription .capture-container {
+      width: 90%; } }
+  .order-by-prescription .capture-container .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: white;
+    z-index: 2;
+    font-family: "Oswald";
+    user-select: none; }
+    @media (max-width: 360px) {
+      .order-by-prescription .capture-container .label {
+        font-size: 1.2em; } }
+  .order-by-prescription .capture-container .capture-prescription {
+    width: 100%;
+    background-color: #4d8b31;
+    height: 10em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 0;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%, 0% 35%); }
+    .order-by-prescription .capture-container .capture-prescription::-webkit-file-upload-button {
+      display: none; }
+    .order-by-prescription .capture-container .capture-prescription:hover {
+      transform: translateY(-5px); }
+    .order-by-prescription .capture-container .capture-prescription:active {
+      transform: translateY(5px); }
+
+.order-by-prescription .upload-container {
+  width: 40%;
+  margin: 0.5em auto;
+  position: relative; }
+  @media (max-width: 768px) {
+    .order-by-prescription .upload-container {
+      width: 80%; } }
+  @media (max-width: 360px) {
+    .order-by-prescription .upload-container {
+      width: 90%; } }
+  .order-by-prescription .upload-container .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: white;
+    z-index: 2;
+    font-family: "Oswald";
+    user-select: none; }
+    @media (max-width: 320px) {
+      .order-by-prescription .upload-container .label {
+        font-size: 1.2em; } }
+  .order-by-prescription .upload-container .upload-prescription {
+    width: 100%;
+    height: 10em;
+    background-color: #0D59A3;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #0D59A3;
+    border-radius: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 65%); }
+    .order-by-prescription .upload-container .upload-prescription:hover {
+      transform: translateY(-5px); }
+    .order-by-prescription .upload-container .upload-prescription:active {
+      transform: translateY(5px); }
+    .order-by-prescription .upload-container .upload-prescription::-webkit-file-upload-button {
+      display: none; }
